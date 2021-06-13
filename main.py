@@ -46,7 +46,7 @@ def printReport():
     print("Water: " + str(resources['water']) + "ml")
     print("milk: " + str(resources['milk']) + "ml")
     print("coffee: " + str(resources['coffee']) + "g")
-    print("profit: $"+ str(float(profit)))
+    print("profit: $" + str(float(profit)))
 
 def requestMoney():
     """Ask the user for coins in USD denomination"""
