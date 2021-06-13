@@ -37,6 +37,7 @@ resources = {
 machine_running = True
 
 def checkResources(recipe):
+    """Check to make sure the machine has enough resources for the recipe"""
     if recipe['water'] < resources['water'] and recipe['coffee'] < resources['coffee'] and recipe['milk'] < resources['milk']:
         return True
     return False
@@ -48,6 +49,7 @@ def printReport():
     print("profit: $"+ str(float(profit)))
 
 def requestMoney():
+    """Ask the user for coins in USD denomination"""
     print("Please insert coins.")
     quarters = int(input("Please insert Quarters: ")) * 0.25
     dimes = int(input("Please insert Dimes: ")) * 0.10
